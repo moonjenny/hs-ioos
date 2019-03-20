@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>주문/재고Hold(카페트) | 주문/재고Hold | 인테리어온라인주문시스템</title>
+	<link rel="stylesheet" href="../../common/css/reset.css" />
+	<link rel="stylesheet" href="../../common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../../common/css/common.css" />
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/jquery-ui.min.js"></script>
+	<script src="../../common/js/hs_common.js"></script>
+	<!-- 팝업창 띄우기 -->
+	<script>
+		function openPop(pop,winW,winH,scrollbars) {
+		//min(250, 150) IE7, IE8
+	   var status = "toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no,scrollbars="+'yes'+", width="+winW+", height="+winH+",left=0, top=0";
+	   window.open(pop+'.html', 'win', status);
+	}
+	</script>
+	<!-- 달력 -->
+	<script>
+		$( function() {
+			$.datepicker.setDefaults( $.datepicker.regional[ "ko" ] );
+			$( "#datepicker" ).datepicker({
+				showOn: "button",
+				buttonText: "출하요구일자 선택하기"
+			});
+			$( "#datepicker2" ).datepicker({
+				showOn: "button",
+				buttonText: "도착예정일자 선택하기"
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- header -->
+	<header id="header">
+		<h1><a href="#n"><img src="../../common/images/login_logo.gif" alt="효성" /><span>인테리어온라인주문시스템</span></a></h1>
+		<div class="top_btn">
+			<ul>
+				<li><span>시스템관리자</span></li>
+				<li><a href="#n">로그아웃</a></li>
+				<li><a href="#n">개인정보수정</a></li>
+				<li><a href="#n">IBSheet Down</a></li>
+				<li><a href="#n">RD Down</a></li>
+			</ul>
+		</div>
+		<nav id="gn">
+			<ul class="nav_main">
+				<li><a href="#n"><span>주문/재고Hold</span></a></li>
+				<li><a href="#n"><span>여신</span></a></li>
+				<li><a href="#n"><span>정보센터</span></a></li>
+				<li><a href="#n"><span>프로젝트</span></a></li>
+				<li><a href="#n"><span>공지사항</span></a></li>
+				<li><a href="#n"><span>게시판</span></a></li>
+			</ul>
+			<div class="nav_sub">
+				<ul class="nav_sub_group">
+					<li>
+						<ul class="sln">
+							<li><a href="#n">재고조회</a></li>
+							<li><a href="#n">주문/재고Hold(카페트)</a></li>
+							<li><a href="#n">임시저장목록</a></li>
+							<li><a href="#n">재고Hold 목록</a></li>
+							<li><a href="#n">주문진행현황</a></li>
+							<li><a href="#n">제품 Setup(카페트)</a></li>
+							<li><a href="#n">제품 Setup(디자인타일)</a></li>
+							<li><a href="#n">재고Hold Setup</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">입금현황조회</a></li>
+							<li><a href="#n">월별여신현황</a></li>
+							<li><a href="#n">거래명세서</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">생산계획</a></li>
+							<li><a href="#n">각종요청</a></li>
+							<li><a href="#n">영업자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">프로젝트등록</a></li>
+							<li><a href="#n">프로젝트조회</a></li>
+							<li><a href="#n">건축정보</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents" class="contents">
+		<!-- location -->
+		<div class="location">
+			<h2>주문/재고Hold(카페트)</h2>
+			<ul>
+				<li class="home"><a href="#n">Home</a></li>
+				<li><span>주문/재고Hold</span></li>
+				<li><strong>주문/재고Hold(카페트)</strong></li>
+			</ul>
+		</div>
+		<!-- //location -->
+
+		<div class="search_box">
+			<ul>
+				<li>
+					<div class="tit"><span>Customer</span></div>
+					<div class="sel">
+						<div class="input_box">
+							<input type="text" class="input_txt w140p" value="0010002651">
+							<a href="#n" class="btn_openpop" onclick="openPop('../common/collections/pop_customer',680,620);return false;" title="사원 조회 팝업열기"><span>사원 조회 팝업열기</span></a>
+						</div>
+						<input type="text" class="input_txt w300p" value="MECHILLE CORPORATION (TONGYANG" disabled>
+					</div>
+				</li>
+			</ul>
+			<!-- search_btn -->
+			<div class="search_btn">
+				<a href="#n" class="btn_gold">주문제출</a>
+				<a href="#n" class="btn_gold">제고Hold등록</a>
+				<a href="#n" class="btn_gold">임시저장</a>
+			</div>
+			<!-- //search_btn -->
+		</div>
+		<!-- //search_box -->
+
+		<!-- 일반사항 -->
+		<div class="tit_box"><h3>일반사항</h3></div>
+		<div class="tbl">
+			<table>
+				<caption>주문/재고Hold(카페트) 일반사항 테이블</caption>
+				<colgroup>
+					<col style="width:20%">
+					<col style="width:20%">
+					<col style="width:20%">
+					<col style="width:20%">
+					<col style="width:20%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>주문/재고Hold 번호</th>
+						<th>주문일자</th>
+						<th>영업담당자</th>
+						<th colspan="2">용도</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" class="input_txt algC" disabled>
+						</td>
+						<td class="algC">
+							<input type="text" class="input_txt algC" value="2019-01-14" disabled>
+						</td>
+						<td>
+							<label for="selManager" class="blind">영업담당자 선택하기</label>
+							<select name="selManager" id="selManager">
+								<option>--</option>
+							</select>
+						</td>
+						<td colspan="2">
+							<label for="selUsage" class="blind">용도 선택하기</label>
+							<select name="selUsage" id="selUsage">
+								<option value="호텔">호텔</option>
+								<option value="OA개보수(대형)">OA개보수(대형)</option>
+								<option value="교육기관">교육기관</option>
+								<option value="관공서">관공서</option>
+								<option value="기타">기타</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>배송주소</th>
+						<th>운송방법</th>
+						<th>수취인</th>
+						<th>전화번호</th>
+						<th>핸드폰번호</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+						<td>
+							<label for="selTransport" class="blind">운송방법 선택하기</label>
+							<select name="selTransport" id="selTransport">
+								<option value="화물">화물</option>
+								<option value="용차">용차</option>
+								<option value="자차">자차</option>
+								<option value="택배">택배</option>
+								<option value="기타">기타</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+					</tr>
+					<tr>
+						<th>출하요구일자</th>
+						<th>도착예정일자</th>
+						<th>도착예정시간</th>
+						<th colspan="2">비고(Hold사유)</th>
+					</tr>
+					<tr>
+						<td class="algC">
+							<input type="text" class="input_txt" id="datepicker">
+						</td>
+						<td class="algC">
+							<input type="text" class="input_txt" id="datepicker2">
+						</td>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+						<td colspan="2">
+							<input type="text" class="input_txt">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- 제품사항 -->
+		<div class="tit_box"><h3>제품사항</h3></div>
+		<!-- IBSheet -->
+		<div class="IBSheet">
+			IBSheet 영역입니다.<br>
+		</div>
+		<!-- //IBSheet -->
+
+		<div class="notice_box">
+			<ul>
+				<li>주문입력시 필수사항: 영업담당자, 용도, 배송주소, 운송방법, 수취인, 전화번호와 핸드폰번호 택1,출하요구일자, 도착예정일자, 도착예정시간.</li>
+				<li>재고Hold시 필수사항: 비고(Hold사유).</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="foot_logo"><img src="../../common/images/footer_logo.gif" alt="HYOSUNG | Always by your side" /></div>
+		<div class="foot_copyright">
+			<a href="#n" class="">개인정보처리방침</a>
+			Copyright &copy; 2019 by HYOSUNG. All rights reserved
+		</div>
+	</footer>
+	<!-- //footer -->
+</body>
+
+</html>

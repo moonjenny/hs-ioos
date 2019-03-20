@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>공지사항 수정 | 공지사항 | 인테리어온라인주문시스템</title>
+	<link rel="stylesheet" href="../../common/css/reset.css" />
+	<link rel="stylesheet" href="../../common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../../common/css/common.css" />
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/jquery-ui.min.js"></script>
+	<script src="../../common/js/hs_common.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header id="header">
+		<h1><a href="#n"><img src="../../common/images/login_logo.gif" alt="효성" /><span>인테리어온라인주문시스템</span></a></h1>
+		<div class="top_btn">
+			<ul>
+				<li><span>시스템관리자</span></li>
+				<li><a href="#n">로그아웃</a></li>
+				<li><a href="#n">개인정보수정</a></li>
+				<li><a href="#n">IBSheet Down</a></li>
+				<li><a href="#n">RD Down</a></li>
+			</ul>
+		</div>
+		<nav id="gn">
+			<ul class="nav_main">
+				<li><a href="#n"><span>주문/재고Hold</span></a></li>
+				<li><a href="#n"><span>여신</span></a></li>
+				<li><a href="#n"><span>정보센터</span></a></li>
+				<li><a href="#n"><span>프로젝트</span></a></li>
+				<li><a href="#n"><span>공지사항</span></a></li>
+				<li><a href="#n"><span>게시판</span></a></li>
+			</ul>
+			<div class="nav_sub">
+				<ul class="nav_sub_group">
+					<li>
+						<ul class="sln">
+							<li><a href="#n">재고조회</a></li>
+							<li><a href="#n">주문/재고Hold(카페트)</a></li>
+							<li><a href="#n">임시저장목록</a></li>
+							<li><a href="#n">재고Hold 목록</a></li>
+							<li><a href="#n">주문진행현황</a></li>
+							<li><a href="#n">제품 Setup(카페트)</a></li>
+							<li><a href="#n">제품 Setup(디자인타일)</a></li>
+							<li><a href="#n">재고Hold Setup</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">입금현황조회</a></li>
+							<li><a href="#n">월별여신현황</a></li>
+							<li><a href="#n">거래명세서</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">생산계획</a></li>
+							<li><a href="#n">각종요청</a></li>
+							<li><a href="#n">영업자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">프로젝트등록</a></li>
+							<li><a href="#n">프로젝트조회</a></li>
+							<li><a href="#n">건축정보</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents" class="contents">
+		<!-- location -->
+		<div class="location">
+			<h2>공지사항 수정</h2>
+			<ul>
+				<li class="home"><a href="#n">Home</a></li>
+				<li><span>공지사항</span></li>
+				<li><strong>공지사항 수정</strong></li>
+			</ul>
+		</div>
+		<!-- //location -->
+
+		<!-- search_btn -->
+		<div class="search_btn">
+			<a href="#n" class="btn_gold">저장</a>
+			<a href="#n" class="btn_gold">취소</a>
+			<a href="#n" class="btn_gold">목록</a>
+		</div>
+		<!-- //search_btn -->
+
+		<div class="tbl">
+			<table>
+				<caption>공지사항 수정 테이블</caption>
+				<colgroup>
+					<col style="width:140px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>작성자</th>
+						<td>
+							<input type="text" class="input_txt w140p" value="노영남">
+						</td>
+					</tr>
+					<tr>
+						<th><label for="selAuthority">권한</label></th>
+						<td>
+							<select name="selAuthority" id="selAuthority" class="w140p">
+								<option>인테리어 대리점</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td>
+							<input type="text" class="input_txt w140p" value="sokono">@
+							<input type="text" class="input_txt w200p" value="hyosung.com">
+						</td>
+					</tr>
+					<tr>
+						<th>제목</th>
+						<td>
+							<div class="chk_box">
+								<input type="checkbox" id="selTitle">
+								<label for="selTitle">공지사항</label>
+							</div>
+							<input type="text" class="input_txt w500p" value="▶[중요">
+						</td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td>
+							<textarea rows="20" cols="80">현재 전산상 "ERP오더"로 재고 홀드되어있거나
+"재고홀드" 되어있는 BS 제품은
+
+실제 출하오더로 전환하거나 (창고 이체 오더)
+단순 재고 홀드라면 대리점에서 해지하여주시기 바랍니다.
+
+금일 업무시간이 지나면 본사에서 임의로 해제토록하겠습니다.
+
+BS 제품의 경우 현재 6,000㎡ 정도가 홀드되어 가용재고가 매우 부족한 상황이고
+전체적으로 판매에 악영향을 미치고있습니다.
+앞으로도 대리점에서 BS, FO제품을 재고홀드하거나 명확치않는(창고이관)
+ERP오더는 예고없이 본사에서 해제토록하겠습니다.(끝)</textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>첨부파일</th>
+						<td>
+							<div class="file_up">
+								<a href="#">첨부파일명 다운로드.png</a>
+							</div>
+							<div class="file_box">
+								<button class="btn_darkblue">찾아보기</button>
+								<input type="text" name="fileAdd" id="fileText" readonly>
+								<input type="file" name="fileAdd" class="hideFile" onchange="document.getElementById('fileText').value = this.value">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td>
+							<input type="password" class="input_txt w140p">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="foot_logo"><img src="../../common/images/footer_logo.gif" alt="HYOSUNG | Always by your side" /></div>
+		<div class="foot_copyright">
+			<a href="#n" class="">개인정보처리방침</a>
+			Copyright &copy; 2019 by HYOSUNG. All rights reserved
+		</div>
+	</footer>
+	<!-- //footer -->
+</body>
+
+</html>

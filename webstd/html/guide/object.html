@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>사이트가이드 | 효성 웹기반 업무시스템</title>
+	<link rel="stylesheet" href="../common/css/reset.css" />
+	<link rel="stylesheet" href="../common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="com/guide.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/hs_common.js"></script>
+	<!-- 달력 -->
+	<script>
+		$( function() {
+			$.datepicker.setDefaults( $.datepicker.regional[ "ko" ] );
+			$( "#datepicker" ).datepicker({
+				showOn: "button",
+				buttonText: "날짜 선택하기"
+			});
+			$( "#datepicker2" ).datepicker({
+				showOn: "button",
+				buttonText: "날짜 선택하기"
+			});
+			$( "#datepicker3" ).datepicker({
+				showOn: "button",
+				buttonText: "날짜 선택하기"
+			});
+			$( "#datepicker_sch1" ).datepicker({
+				showOn: "button",
+				buttonText: "날짜 선택하기"
+			});
+			$( "#datepicker_sch2" ).datepicker({
+				showOn: "button",
+				buttonText: "날짜 선택하기"
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header s -->
+		<div id="header">
+			<h1>효성 웹 기반 업무시스템 웹 표준화(2차) - 인테리어온라인주문시스템</h1>
+			<ul class="gnb">
+				<li><a href="index.html">개요</a></li>
+				<li><a href="structure.html">디렉토리 구조</a></li>
+				<li><a href="guide.html">요소 마크업</a></li>
+				<li><a href="object.html" class="on">자주 사용하는 오브젝트</a></li>
+				<li><a href="list.html">퍼블리싱 리스트</a></li>
+			</ul>
+		</div>
+		<!--// header e -->
+
+		<!-- container s -->
+		<div id="container">
+			<h2 class="h2_tit">자주 사용하는 오브젝트</h2>
+			<div class="conbox">
+				<ul>
+					<li>본 작업에 많이 사용되는 요소에 대한 소스코드 페이지 입니다.</li>
+				</ul>
+			</div>
+			<!-- CONTENT -->
+			<div class="contents" id="contents">
+				<div class="g_menu">
+					<ul>
+						<li class="on">테이블</li>
+						<li>검색</li>
+						<li>버튼</li>
+					</ul>
+				</div>
+
+				<div class="g_section">
+					<!-- 탭1 명칭 -->
+					<div class="con" style="display:block">
+						<div class="g_title">테이블 내 자주사용하는 요소들</div>
+						<ul class="g_guide">
+							<li>팝업열기, 달력, 셀렉트박스 2개</li>
+						</ul>
+						<div class="g_html">
+<div class="tbl">
+	<table>
+		<caption>사원조회 팝업열기</caption>
+		<colgroup>
+			<col style="width:120px">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th>달력</th>
+				<td>
+					<input type="text" class="input_txt" id="datepicker">
+				</td>
+			</tr>
+			<tr>
+				<th>첨부파일</th>
+				<td>
+					<div class="file_up">
+						<a href="#">첨부파일명 다운로드.hwp</a>
+					</div>
+					<div class="file_box">
+						<button class="btn_darkblue">찾아보기</button>
+						<input type="text" name="fileAdd" id="fileText" readonly>
+						<input type="file" name="fileAdd" class="hideFile" onchange="document.getElementById('fileText').value = this.value">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>체크박스</th>
+				<td>
+					<div class="chk_box">
+						<input type="checkbox" id="chk01"><label for="chk01">체크01</label>
+						<input type="checkbox" id="chk02"><label for="chk02">체크02</label>
+						<input type="checkbox" id="chk03"><label for="chk03">체크03</label>
+						<input type="checkbox" id="chk04"><label for="chk04">체크04</label>
+						<input type="checkbox" id="chk05"><label for="chk05">체크05</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>셀렉트박스</th>
+				<td>
+					<select name="sel01" id="sel01">
+						<option>옵션명</option>
+						<option>옵션명</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+
+						<div class="g_title">테이블 정렬</div>
+						<ul class="g_guide">
+							<li>테이블 정렬 : Left, Center, Right 정렬</li>
+						</ul>
+						<div class="g_html">
+<div class="tbl">
+	<table>
+		<caption>신청내역상세(부품) 리스트</caption>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="algL">왼쪽 정렬</th>
+				<th class="algC">가운데 정렬</th>
+				<th class="algR">오른쪽 정렬</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="algL">왼쪽 정렬</td>
+				<td class="algC">가운데 정렬</td>
+				<td class="algR">오른쪽 정렬</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+
+
+<!--
+						<div class="g_title">타이틀</div>
+						<ul class="g_guide">
+							<li>설명글 입니다.</li>
+						</ul>
+						<div class="g_html">
+
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+
+						<div class="g_title">타이틀</div>
+						<ul class="g_guide">
+							<li>설명글 입니다.</li>
+						</ul>
+						<div class="g_html">
+
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr /> -->
+
+
+
+					</div>
+					<!--// .con -->
+
+					<!-- 탭2 명칭 -->
+					<div class="con">
+						<div class="g_title">검색</div>
+						<ul class="g_guide">
+							<li></li>
+						</ul>
+						<div class="g_html">
+<div class="search_box">
+	<ul>
+		<li>
+			<div class="tit"><label for="selCompany">회사명</label></div>
+			<div class="sel">
+				<select id="selCompany" name="selCompany">
+					<option>(주)효성</option>
+					<option>효성첨단소재(주)</option>
+				</select>
+			</div>
+		</li>
+		<li>
+			<div class="tit">제품번호</div>
+			<div class="sel">
+				<input type="text" class="input_txt">
+			</div>
+		</li>
+		<li>
+			<div class="tit">카테고리조건</div>
+			<div class="sel">
+				<div class="input_box">
+					<input type="text" class="input_txt">
+					<button class="btn_openpop" onclick="openPop('../order/OCF200Q',680,620);return false;" title="카테고리조건 팝업열기"><span>카테고리조건 팝업열기</span></button>
+				</div>
+				<button class="btn_del" title="삭제하기"><span>삭제</span></button>
+			</div>
+		</li>
+		<li>
+			<div class="tit"><span>Customer</span></div>
+			<div class="sel">
+				<div class="input_box">
+					<input type="text" class="input_txt w140p" value="0010002651">
+					<a href="#n" class="btn_openpop" onclick="openPop('../common/collections/pop_customer',680,620);return false;" title="사원 조회 팝업열기"><span>사원 조회 팝업열기</span></a>
+				</div>
+				<input type="text" class="input_txt w300p" value="MECHILLE CORPORATION (TONGYANG" disabled="">
+			</div>
+		</li>
+		<li>
+			<div class="tit">
+				<label for="selField"><span class="blind">현장명,등록일자 선택하기</span></label>
+				<select id="selField" name="selField" class="w100p">
+					<option>현장명</option>
+					<option>등록일자</option>
+				</select>
+			</div>
+			<div class="sel">
+				<input type="text" class="input_txt w200p">
+			</div>
+		</li>
+		<li>
+			<div class="tit"><label for="selCondition">상태</label></div>
+			<div class="sel">
+				<select name="selCondition" id="selCondition" class="w100p">
+					<option>발송</option>
+					<option>접수</option>
+					<option>완료</option>
+					<option>반려</option>
+				</select>
+			</div>
+		</li>
+		<li>
+			<div class="tit"><label for="selVersion">버전</label></div>
+			<div class="sel">
+				<select name="selVersion" id="selVersion" class="w100p">
+					<option>최신</option>
+				</select>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- search_btn -->
+<div class="search_btn">
+	<a href="#n" class="btn_gold">조회</a>
+	<a href="#n" class="btn_gold">엑셀 다운로드</a>
+</div>
+<!-- //search_btn -->
+
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+					</div>
+					<!--// .con -->
+
+
+					<!-- 탭3 명칭 -->
+					<div class="con">
+						<div class="g_title">버튼 레이아웃 입니다.</div>
+						<ul class="g_guide">
+							<li>검색 영역에 해당하는 버튼 마크업 입니다.</li>
+						</ul>
+						<div class="g_html">
+<!-- 검색버튼 -->
+<div class="search_btn">
+	<a href="#n" class="btn_gold">조회</a>
+	<a href="#n" class="btn_gold">삭제</a>
+	<a href="#n" class="btn_gold">엑셀 다운로드</a>
+</div>
+
+<!-- 팝업용 검색버튼 -->
+<div class="pop_btnbox">
+	<a href="#n" class="btn_gold">선택</a>
+	<a href="#n" class="btn_gold">검색</a>
+</div>
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+
+
+					<!-- 탭5 명칭
+					<div class="con">
+						<div class="g_title">레이아웃 입니다.</div>
+						<ul class="g_guide">
+							<li></li>
+						</ul>
+						<div class="g_html">
+
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+					</div>
+					<!--// .con -->
+
+
+					<!-- 탭6 명칭
+					<div class="con">
+						<div class="g_title">레이아웃 입니다.</div>
+						<ul class="g_guide">
+							<li></li>
+						</ul>
+						<div class="g_html">
+
+						</div>
+						<a href="#n" class="source">소스보기</a>
+						<hr />
+					</div>
+					<!--// .con -->
+
+
+				</div>
+			</div>
+			<!-- //CONTENT -->
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".gnb > li:nth-child(4) > a").addClass("on");
+			/*
+			$(".g_menu li").eq(4).addClass("on");
+			$(".contents .con").hide();
+			$(".contents .con").eq(4).show();
+			*/
+			$(".g_menu li").bind("click", function(){
+				gId = $(this).index();
+				$(".g_menu li").removeClass("on");
+				$(".g_menu li").eq(gId).addClass("on");
+				$(".contents .con").hide();
+				$(".contents .con").eq(gId).show();
+			});
+
+			//$(".btn").wrapInner("<em></em>");
+
+			$(".source").bind("click",function(){
+				if($(this).text()=="소스보기"){
+					$(this).text("소스닫기");
+					$(this).after("<div class='v_source'></div>");
+					$(this).next().toggle();
+					var a = $(this).prev().clone().html();
+					$(this).next().text(a);
+					$(this).next().wrapInner("<pre></pre>");
+				}else{
+					$(this).text("소스보기");
+					$(".v_source").remove();
+				}
+			});
+		});
+	</script>
+</body>
+</html>

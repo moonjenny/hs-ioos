@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>사이트가이드 | 효성 웹기반 업무시스템</title>
+	<link rel="stylesheet" href="../common/css/reset.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="com/guide.css" />
+	<link rel="stylesheet" href="../common/css/jquery-ui.min.css" />
+	<script src="../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header s -->
+		<div id="header">
+			<h1>효성 웹 기반 업무시스템 웹 표준화(2차) - 인테리어온라인주문시스템</h1>
+			<ul class="gnb">
+				<li><a href="index.html">개요</a></li>
+				<li><a href="structure.html" class="on">디렉토리 구조</a></li>
+				<li><a href="guide.html">요소 마크업</a></li>
+				<!-- <li><a href="object.html">자주 사용하는 오브젝트</a></li> -->
+				<li><a href="list.html">퍼블리싱 리스트</a></li>
+			</ul>
+		</div>
+		<!--// header e -->
+
+		<!-- container s -->
+		<div id="container">
+			<h2 class="h2_tit">기본정의</h2>
+			<div class="conbox">
+				<ul>
+					<li>디렉토리 구조는 AS-IS 기준으로 정의합니다.</li>
+					<li>퍼블리싱 공통요소는 /common/ 폴더에 포함되어 있습니다.</li>
+					<li>/jsp/ 폴더에 실제 개발관련 .jsp 파일이 있습니다.</li>
+				</ul>
+			</div>
+			<h2 class="h2_tit">디렉토리 구조</h2>
+			<div id="g_content">
+				<div class="div_str">
+					<ul class="">
+						<li><span><strong>webstd</strong></span>
+							<ul>
+								<li><span><strong>html</strong></span>
+									<ul>
+										<li><span>common</span>
+											<ul>
+												<li><span>css</span><div>css 스타일</div></li>
+												<li><span>fonts</span><div>웹폰트</div></li>
+												<li><span>images</span>
+													<div>해당작업에 사용되는 이미지를 통합해서 관리</div>
+												</li>
+												<li><span>js</span><div>스크립트 파일</div></li>
+											</ul>
+										</li>
+										<li><span>html</span>
+											<ul>
+												<li><span>common</span>
+													<ul>
+														<li><span>collections</span><div>공통 팝업</div></li>
+													</ul>
+												</li><li>
+												</li><li><span>order</span><div>주문/재고Hold</div></li>
+												<li><span>receivable</span><div>여신</div></li>
+												<li><span>infomation</span><div>정보센터</div></li>
+												<li><span>project</span><div>프로젝트</div></li>
+												<li><span>helpdesk</span><div>공지사항,게시판</div></li>
+												<li><span>etc</span><div>개인정보수정</div></li>
+											</ul>
+										</li>
+										<li><span>guide</span><div>퍼블리싱 가이드 폴더</div></li>
+									</ul>
+								</li>
+								<li><span><strong>jsp</strong></span>
+									<ul>
+										<li><span>common</span>
+											<ul>
+												<li><span>collections</span><div>공통 팝업</div></li>
+												<li><span>css</span><div>css 스타일</div></li>
+												<li><span>fonts</span><div>웹폰트</div></li>
+												<li><span>images</span>
+													<div>해당작업에 사용되는 이미지를 통합해서 관리</div>
+												</li>
+												<li><span>js</span><div>스크립트 파일</div></li>
+											</ul>
+										<li><span>include</span>
+											<ul>
+												<li><span>header.jsp<br>gnb.jsp<br>footer.jsp<br>location.jsp</span><div>doctype,meta태그<br>헤더 GNB 영역<br>푸터<br>h2 타이틀,로케이션바</div></li>
+											</ul>
+										</li>
+										<li><span>order</span><div>주문/재고Hold</div></li>
+										<li><span>receivable</span><div>여신</div></li>
+										<li><span>infomation</span><div>정보센터</div></li>
+										<li><span>project</span><div>프로젝트</div></li>
+										<li><span>helpdesk</span><div>공지사항,게시판</div></li>
+										<li><span>etc</span><div>개인정보수정</div></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--// container e -->
+		<div id="footer">
+			Copyright &copy; All Right Reserved
+		</div>
+		<p class="btn_top"><a href="#top"><img src="img/btn_gotop.gif" alt="TOP" /></a></p>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".gnb > li:nth-child(2) > a").addClass("on");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>제품조회(카페트) | 인테리어온라인주문시스템</title>
+	<link rel="stylesheet" href="../../common/css/reset.css" />
+	<link rel="stylesheet" href="../../common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../../common/css/common.css" />
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/jquery-ui.min.js"></script>
+	<script src="../../common/js/hs_common.js"></script>
+	<!-- 팝업창 띄우기 -->
+	<script>
+		function openPop(pop,winW,winH,scrollbars) {
+		//min(250, 150) IE7, IE8
+	   var status = "toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no,scrollbars="+'yes'+", width="+winW+", height="+winH+",left=0, top=0";
+	   window.open(pop+'.html', 'win', status);
+	}
+	</script>
+</head>
+
+<body>
+	<header id="pop_head">
+		<h1>제품조회(카페트)</h1>
+		<button type="button" class="btn_pop_close" onclick="window.close();">닫기</button>
+	</header>
+	<div id="pop_main">
+		<div class="pop_main_inner">
+			<div class="pop_main_inner2">
+				<div class="btn_top">
+					<a href="#n" class="btn_gold">최근주문제품(10개)</a>
+					<a href="#n" class="btn_gold">최다주문제품(10개)</a>
+				</div>
+
+				<div class="search_box">
+					<ul>
+						<li>
+							<div class="tit"><label for="selCompany">회사명</label></div>
+							<div class="sel">
+								<select id="selCompany" name="selCompany">
+									<option>(주)효성</option>
+									<option>효성첨단소재(주)</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="tit">제품번호</div>
+							<div class="sel">
+								<input type="text" class="input_txt w200p">
+							</div>
+						</li>
+						<li>
+							<div class="tit">카테고리조건</div>
+							<div class="sel">
+								<div class="input_box">
+									<input type="text" class="input_txt w200p">
+									<button class="btn_openpop" onclick="openPop('../order/OCF200Q',680,620);return false;" title="카테고리조건 팝업열기"><span>카테고리조건 팝업열기</span></button>
+								</div>
+								<button class="btn_del" title="삭제하기"><span>삭제</span></button>
+							</div>
+						</li>
+					</ul>
+					<!-- search_btn -->
+					<div class="search_btn">
+						<a href="#n" class="btn_gold">조회</a>
+					</div>
+					<!-- //search_btn -->
+				</div>
+				<!-- //search_box -->
+
+
+				<!-- IBSheet -->
+				<div class="IBSheet">
+					IBSheet 영역입니다.
+				</div>
+				<!-- //IBSheet -->
+
+			</div>
+			<!-- //pop_main_inner2 -->
+		</div>
+		<!-- //pop_main_inner -->
+	</div>
+	<!-- //pop_main -->
+	<footer id="pop_foot"></footer>
+</body>
+</html>

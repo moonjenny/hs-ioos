@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow" />
+	<title>프로젝트 수정 | 프로젝트 | 인테리어온라인주문시스템</title>
+	<link rel="stylesheet" href="../../common/css/reset.css" />
+	<link rel="stylesheet" href="../../common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../../common/css/common.css" />
+	<script src="../../common/js/jquery-3.3.1.min.js"></script>
+	<script src="../../common/js/jquery-ui.min.js"></script>
+	<script src="../../common/js/hs_common.js"></script>
+	<!-- 팝업창 띄우기 -->
+	<script>
+		function openPop(pop,winW,winH,scrollbars) {
+		//min(250, 150) IE7, IE8
+	   var status = "toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no,scrollbars="+'yes'+", width="+winW+", height="+winH+",left=0, top=0";
+	   window.open(pop+'.html', 'win', status);
+	}
+	</script>
+</head>
+
+<body>
+	<!-- header -->
+	<header id="header">
+		<h1><a href="#n"><img src="../../common/images/login_logo.gif" alt="효성" /><span>인테리어온라인주문시스템</span></a></h1>
+		<div class="top_btn">
+			<ul>
+				<li><span>시스템관리자</span></li>
+				<li><a href="#n">로그아웃</a></li>
+				<li><a href="#n">개인정보수정</a></li>
+				<li><a href="#n">IBSheet Down</a></li>
+				<li><a href="#n">RD Down</a></li>
+			</ul>
+		</div>
+		<nav id="gn">
+			<ul class="nav_main">
+				<li><a href="#n"><span>주문/재고Hold</span></a></li>
+				<li><a href="#n"><span>여신</span></a></li>
+				<li><a href="#n"><span>정보센터</span></a></li>
+				<li><a href="#n"><span>프로젝트</span></a></li>
+				<li><a href="#n"><span>공지사항</span></a></li>
+				<li><a href="#n"><span>게시판</span></a></li>
+			</ul>
+			<div class="nav_sub">
+				<ul class="nav_sub_group">
+					<li>
+						<ul class="sln">
+							<li><a href="#n">재고조회</a></li>
+							<li><a href="#n">주문/재고Hold(카페트)</a></li>
+							<li><a href="#n">임시저장목록</a></li>
+							<li><a href="#n">재고Hold 목록</a></li>
+							<li><a href="#n">주문진행현황</a></li>
+							<li><a href="#n">제품 Setup(카페트)</a></li>
+							<li><a href="#n">제품 Setup(디자인타일)</a></li>
+							<li><a href="#n">재고Hold Setup</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">입금현황조회</a></li>
+							<li><a href="#n">월별여신현황</a></li>
+							<li><a href="#n">거래명세서</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">생산계획</a></li>
+							<li><a href="#n">각종요청</a></li>
+							<li><a href="#n">영업자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sln">
+							<li><a href="#n">프로젝트등록</a></li>
+							<li><a href="#n">프로젝트조회</a></li>
+							<li><a href="#n">건축정보</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents" class="contents">
+		<!-- location -->
+		<div class="location">
+			<h2>프로젝트 수정</h2>
+			<ul>
+				<li class="home"><a href="#n">Home</a></li>
+				<li><span>프로젝트</span></li>
+				<li><strong>프로젝트 수정</strong></li>
+			</ul>
+		</div>
+		<!-- //location -->
+
+		<!-- search_btn -->
+		<div class="search_btn">
+			<a href="#n" class="btn_gold">반려</a>
+			<a href="#n" class="btn_gold">승인확인</a>
+			<a href="#n" class="btn_gold">인쇄</a>
+			<a href="#n" class="btn_gold">목록</a>
+			<a href="#n" class="btn_gold">삭제</a>
+		</div>
+		<!-- //search_btn -->
+
+		<div class="tbl">
+			<table>
+				<caption>프로젝트 수정 테이블</caption>
+				<colgroup>
+					<col style="width:140px">
+					<col style="width:140px">
+					<col>
+					<col style="width:140px">
+					<col style="width:140px">
+					<col style="width:140px">
+					<col style="width:140px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>현장명</th>
+						<td colspan="2">부산 그랜드호텔 카펫 교체</td>
+						<th>용도</th>
+						<td>숙박</td>
+						<th>공개여부</th>
+						<td>공개</td>
+					</tr>
+					<tr>
+						<th>발주방식</th>
+						<td colspan="6">
+							<div class="chk_box">
+								<input type="checkbox" disabled id="chk01"><label for="chk01">건축주(시행사)</label>
+								<input type="checkbox" disabled id="chk02"><label for="chk02">시공(건설)사</label>
+								<input type="checkbox" disabled id="chk03"><label for="chk03">인테리어사 수장업체</label>
+								<input type="checkbox" disabled id="chk04"><label for="chk04">입찰</label>
+								<input type="checkbox" disabled id="chk05"><label for="chk05">기타</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th rowspan="8">현장사항</th>
+						<th>구분</th>
+						<th colspan="2">회사명</th>
+						<th>담당자</th>
+						<th>연락처</th>
+						<th>영업여부</th>
+					</tr>
+					<tr>
+						<th class="brd_left">건축주(시행사)</th>
+						<td colspan="2">부산 그랜드호텔</td>
+						<td>김영준 부장</td>
+						<td class="algC">051-740-0321</td>
+						<td class="algC">O</td>
+					</tr>
+					<tr>
+						<th class="brd_left">설계사</th>
+						<td colspan="2">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+					<tr>
+						<th class="brd_left">감리</th>
+						<td colspan="2">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+					<tr>
+						<th class="brd_left">시공(건설)사</th>
+						<td colspan="2">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+					<tr>
+						<th class="brd_left">인테리어업체</th>
+						<td colspan="2">IM Deco</td>
+						<td>박태석</td>
+						<td class="algC">02-424-8940</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+					<tr>
+						<th class="brd_left">수장업체</th>
+						<td colspan="2">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+					<tr>
+						<th class="brd_left">기타</th>
+						<td colspan="2">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+						<td class="algC">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- IBSheet -->
+		<div class="IBSheet">
+			IBSheet 영역입니다. (영업대상품목)<br>
+		</div>
+		<!-- //IBSheet -->
+		<!-- IBSheet -->
+		<div class="IBSheet">
+			IBSheet 영역입니다.(활동내역)<br>
+		</div>
+		<!-- //IBSheet -->
+
+		<div class="tbl">
+			<table>
+				<caption>본사 요청사항,본사확인 테이블</caption>
+				<colgroup>
+					<col style="width:140px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>對 본사 요청사항</th>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>본사확인</th>
+						<td>
+							<input type="text" class="input_txt">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="foot_logo"><img src="../../common/images/footer_logo.gif" alt="HYOSUNG | Always by your side" /></div>
+		<div class="foot_copyright">
+			<a href="#n" class="">개인정보처리방침</a>
+			Copyright &copy; 2019 by HYOSUNG. All rights reserved
+		</div>
+	</footer>
+	<!-- //footer -->
+</body>
+
+</html>
