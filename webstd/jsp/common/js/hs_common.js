@@ -2,10 +2,10 @@
 /* gnb */
 function GNB_navi(){
     //GNB
-    $("#gn > .nav_main").on("mouseenter",function(e){
+    $("#gn > .nav_main li").on("mouseenter",function(e){
     	e.preventDefault();
-    	if($(this).parent().find(".nav_sub").is(":hidden")==true){
-    		$(this).parent().find(".nav_sub").stop().slideDown("fast");
+    	if($(this).parent().parent().find(".nav_sub").is(":hidden")==true){
+    		$(this).parent().parent().find(".nav_sub").stop().slideDown("fast");
     	}
     });
     $("#gn").on("mouseleave",function(e){

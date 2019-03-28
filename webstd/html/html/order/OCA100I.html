@@ -136,7 +136,10 @@
 		<!-- //search_box -->
 
 		<!-- 일반사항 -->
-		<div class="tit_box"><h3>일반사항</h3></div>
+		<div class="tit_box">
+			<h3>일반사항</h3>
+			<div class="txt_tip">* Hold 가능한 수량: 0 / 현재 Hold수량:0</div> <!-- 20190328 추가 -->
+		</div>
 		<div class="tbl">
 			<table>
 				<caption>주문/재고Hold(카페트) 일반사항 테이블</caption>
@@ -216,12 +219,18 @@
 						<th colspan="2">비고(Hold사유)</th>
 					</tr>
 					<tr>
+						<!-- 20190328 수정 s -->
 						<td class="algC">
-							<input type="text" class="input_txt" id="datepicker">
+							<div class="data">
+								<input type="text" class="input_txt" id="datepicker">
+							</div>
 						</td>
 						<td class="algC">
-							<input type="text" class="input_txt" id="datepicker2">
+							<div class="data">
+								<input type="text" class="input_txt" id="datepicker2">
+							</div>
 						</td>
+						<!-- 20190328 수정 e -->
 						<td>
 							<input type="text" class="input_txt">
 						</td>
